@@ -16,7 +16,15 @@
 <!-- IONICONS -->
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
-<body style="background-color:#e3f2fd;">
+<!-- RANDOM NUMBERS -->
+<script src="https://randojs.com/1.0.0.js"></script>
+<script>
+  function showRandomNumber(){
+    document.getElementById("myNumber").innerHTML = rando(1, 2, ,3, 4, 5, 6, 7, 8, 9, 10);
+  }
+</script>
+
+<body style="background-color:#e3f2fd;" onload="showRandomNumber();">
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
@@ -113,7 +121,7 @@
   <div class="card border border-dark">
     <img src="images/happydog.jpg" class="card-img-top" alt="">
     <div class="card-body">
-      <h5 class="card-title text-center">Products</h5>
+      <h5 class="card-title text-center">Menu</h5>
       <p class="card-text text-center"></p>
     </div>
   </div>
@@ -132,7 +140,7 @@
   <div class="row no-gutters">
     <div class="col-md">
       <div class="card-body">
-        <h5 class="card-title">Pet Owner Tip #(##)</h5>
+        <h5 class="card-title">Pet Owner Tip #<div id="myNumber"></div></h5>
         <p class="card-text">Have the information be chosen at random. First
           learn how to do that and then have it work with the numbers. Maybe
           try the Swift strategy for it to work. Make a new one appear

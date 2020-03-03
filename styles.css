@@ -11,3 +11,10 @@ hr {
 .tab {
   text-indent: 40px;
 }
+
+#myNumber{
+  font-size:100px;
+  text-align:center;
+  margin:50px auto;
+  font-family:Arial, sans-serif;
+}
